@@ -1,0 +1,48 @@
+{% extends "Main/layout.html" %}
+{% load static %}
+
+
+{% block head %}
+    <title>About Me!</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'Main/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+{% endblock %}
+{% block script %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block profile %}
+
+<div class="profile">
+    <ul class="size-menu">
+        <li class="size-menu-item"><h3>About Me</h3></li>
+        <li class="size-menu-item"><h6 style="font-weight: bold;">Photo of me:</h6></li>
+        <img src="{% static 'Image/myProfile.jpg' %}" alt="My Profile" id="profile">
+        <li class="size-menu-item"><p id="text">Name: Tham Veasna</p></li>
+        <li class="size-menu-item"><p id="text">Class: 305</p></li>
+        <li class="size-menu-item"><p id="text">Year: 2</p></li>
+        <li class="size-menu-item"><p id="text">Department: Data Science and Engineering (DSE)</p></li>
+        <li class="size-menu-item"><p id="text">University: Royal University of Phnom Penh (RUPP)</p></li>
+    </ul>    
+</div>
+{% endblock %}
+
+{% block body %}
+<div class="main">
+    <h1>Assignments</h1>
+    <h3>BootStrap</h3>
+    <h6>Description: Responsive, Deadline: Jun 9, 2023</h6>
+    <ul>
+        <li><a href="{% url 'Main:Navigation' %}">Responsive Top Navigation</a></li>
+        <li><a href="{% url 'Main:ImageGallery' %}">Responsive Image Gallery</a></li>
+        <li><a href="{% url 'Main:Layout' %}">Responsive Layout</a></li>
+    </ul>
+    <h3>JavaScript</h3>
+    <h6>Description: Unknown, Deadline: Unknown</h6>
+    <ul>
+        <li><a href="">Unknown</a></li>
+        <li><a href="">Unknown</a></li>
+    </ul>
+    To be Continued
+</div>
+{% endblock %}

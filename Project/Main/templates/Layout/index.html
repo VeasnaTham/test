@@ -1,0 +1,50 @@
+<!-- {% extends 'Main/layout.html'} -->
+{% load static %}
+
+{% block head %}
+    <title>Responsive Top Navigation</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'Layout/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+{% endblock %}
+{% block script %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+{% endblock %}
+{% block body%}
+    <p><a href="{% url 'Main:index'%}">Back to Assignments</a></p>
+    <div>
+        <nav class="navbar-custom">
+            <ul class="navbar-list">
+            <li class="navbar-item">Link</li>
+            <li class="navbar-item">Link</li>
+            <li class="navbar-item">Link</li>
+            <li class="navbar-item">Link</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="profile">
+        <ul class="size-menu">
+            <li class="size-menu-item"><h3>About Me</h3></li>
+            <li class="size-menu-item"><h6 style="font-weight: bold;">Photo of me:</h6></li>
+            <li class="size-menu-item"><p class="image" id="lg-image">Image</p></li>
+            <li class="size-menu-item"><p id="text">Some text about me in culpa qui officia deserunt mollit anim..</p></li>
+            <li class="size-menu-item"><h4>More Text</h4></li>
+            <li class="size-menu-item"><p id="text">Lorem ipsum dolor sit ame.</p></li>
+            <li class="size-menu-item"><p class="image" id="sm-image">Image</p></li>
+            <li class="size-menu-item"><p class="image" id="sm-image">Image</p></li>
+            <li class="size-menu-item"><p class="image" id="sm-image">Image</p></li>
+        </ul>    
+    </div>
+    <div class="main">
+        <h3>TITLE HEADING</h3>
+        <h6>Title description, Dec 7, 2017</h6>
+        <p class="image" id="lg-image">Image</p>
+        <p>Some text..</p>
+        <p id="text">Sunt in culpa qui officia deserunt mollit anim id est laborum consectelur adpiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <h3>TITLE HEADING</h3>
+        <h6>Title description, Dec 7, 2017</h6>
+        <p class="image" id="lg-image">Image</p>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectelur adpiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+    </div>
+{% endblock %}

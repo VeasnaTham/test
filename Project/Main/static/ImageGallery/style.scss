@@ -1,0 +1,36 @@
+#gallery {
+    line-height:0;
+    -webkit-column-count:4; /* split it into 5 columns */
+    -webkit-column-gap:5px; /* give it a 5px gap between columns */
+    -moz-column-count:5;
+    -moz-column-gap:5px;
+    column-count:4;
+    column-gap:5px;
+    img {
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom:5px; /* to match column gap */
+    }
+}
+#text{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    #description {
+        font-size: 14.8px;
+        font-weight: bold;
+    }
+}
+@media (max-width: 1200px) {
+    #gallery {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+@media (max-width: 480px) {
+    #gallery {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}

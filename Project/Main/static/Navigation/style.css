@@ -1,0 +1,43 @@
+nav .navbar-brand {
+  font-size: 16px;
+  padding: 8px 13px 8px 8px;
+  margin: 0px;
+  text-align: center;
+  background-color: #1cb050;
+}
+nav .navbar-toggler {
+  border: none;
+  border-radius: 0px 2px 2px 0px;
+  background-color: #383434;
+}
+nav .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+nav .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: white;
+}
+nav .navbar-toggler:focus .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+nav .nav-item {
+  padding-left: 7px;
+}
+nav #navbarNavDropdown {
+  background-color: #383434;
+}
+nav .container-fluid {
+  background-color: #383434;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.text {
+  padding: 0px 0px 0px 8px;
+}
+.text p {
+  padding-top: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
